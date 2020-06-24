@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "tfar.examplemod.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "modid.refmap.json",
+  "mixins": [
+    "MixinPlayerEntity",
+    "MixinBowItem",
+    "MixinBlock"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
