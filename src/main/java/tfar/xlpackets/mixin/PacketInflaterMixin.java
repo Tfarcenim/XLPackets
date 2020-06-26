@@ -1,4 +1,4 @@
-package xlpackets.mixin;
+package tfar.xlpackets.mixin;
 
 import net.minecraft.network.NettyCompressionDecoder;
 import org.spongepowered.asm.mixin.Mixin;

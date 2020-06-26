@@ -1,12 +1,10 @@
 {
   "required": true,
-  "package": "tfar.examplemod.mixin",
+  "package": "tfar.xlpackets.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "modid.refmap.json",
+  "refmap": "xlpackets.refmap.json",
   "mixins": [
-    "MixinPlayerEntity",
-    "MixinBowItem",
-    "MixinBlock"
+    "PacketInflaterMixin"
   ],
   "injectors": {
     "defaultRequire": 1

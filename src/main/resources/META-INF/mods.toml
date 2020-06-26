@@ -29,7 +29,5 @@ displayName="XL Packets" #mandatory
 authors="Tfarecnim" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-
-placeholder
-
+Mod to help clients connect to servers with large datapacks
 '''

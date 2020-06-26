@@ -1,4 +1,4 @@
-package xlpackets;
+package tfar.xlpackets;
 
 import net.minecraftforge.fml.common.Mod;
 
