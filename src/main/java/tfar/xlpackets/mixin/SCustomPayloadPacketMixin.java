@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 @Mixin(ClientboundCustomPayloadPacket.class)
 public class SCustomPayloadPacketMixin {
 
-    @ModifyConstant(method = {"<init>()V","readPacketData"},constant = @Constant(intValue = 1048576))
+    @ModifyConstant(method = {"handle"},constant = @Constant(intValue = 1048576))
     private int xlPackets(int constant) {
         return 2000000000;
     }
