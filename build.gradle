@@ -13,8 +13,7 @@ plugins {
 
 apply plugin: 'org.spongepowered.mixin'
 
-version = "${project.minecraft_version}-${project.mod_version}"
-group = "com.tfar.${project.modId}"
+version = "${project.mod_version}"
 
 minecraft {
     mappings channel: "official", version: "${project.minecraft_version}"
@@ -25,7 +24,7 @@ dependencies {
 }
 
 mixin {
-    add sourceSets.main, "${project.modId}.refmap.json"
+    add sourceSets.main, "xlpackets.refmap.json"
 }
 
 processResources {
