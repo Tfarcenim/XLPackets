@@ -25,12 +25,12 @@ dependencies {
 }
 
 mixin {
-    add sourceSets.main, "xlpackets.refmap.json"
+    add sourceSets.main, 'xlpackets.refmap.json'
     config 'xlpackets.mixins.json'
 }
 
 processResources {
     filesMatching("META-INF/mods.toml") {
-        expand "version": project.version
+        expand("version": project.version)
     }
 }
