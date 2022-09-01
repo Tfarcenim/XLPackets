@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.injection.Constant;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
 
 @Mixin(CompressionDecoder.class)
-public class PacketInflaterMixin {
+public class CompressionDecoderMixin {
 	@ModifyConstant(method = "decode",constant = @Constant(intValue = 2097152))
 	private int xlPackets(int old) {
 		return 2000000000;
