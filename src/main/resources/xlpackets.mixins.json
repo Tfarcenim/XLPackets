@@ -6,7 +6,7 @@
   "mixins": [
     "PacketBufferMixin",
     "PacketInflaterMixin",
-    "SCustomPayloadPacketMixin"
+    "ServerboundCustomPayloadPacketMixin"
   ],
   "injectors": {
     "defaultRequire": 0
