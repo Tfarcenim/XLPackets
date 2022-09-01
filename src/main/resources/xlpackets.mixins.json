@@ -4,12 +4,11 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "xlpackets.refmap.json",
   "mixins": [
+    "ClientboundCustomPayloadPacketMixin",
     "PacketBufferMixin",
-    "PacketInflaterMixin",
-    "ServerboundCustomPayloadPacketMixin"
+    "PacketInflaterMixin"
   ],
   "injectors": {
     "defaultRequire": 0
-  },
-  "minVersion": "0.8"
+  }
 }
