@@ -1,6 +1,6 @@
 {
-    "pack": {
-        "description": "XL Packets",
-        "pack_format": 10
-    }
+  "pack": {
+    "description": "XL Packets",
+    "pack_format": 10
+  }
 }
