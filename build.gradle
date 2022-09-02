@@ -4,7 +4,6 @@ buildscript {
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-        // MixinGradle:
         classpath 'org.spongepowered:mixingradle:0.7.+'
     }
 }
@@ -23,11 +22,16 @@ minecraft {
 
 dependencies {
     minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
-
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
 mixin {
     add sourceSets.main, "xlpackets.refmap.json"
     config 'xlpackets.mixins.json'
+}
+
+processResources {
+    filesMatching("META-INF/mods.toml") {
+        expand("version": project.version)
+    }
 }
