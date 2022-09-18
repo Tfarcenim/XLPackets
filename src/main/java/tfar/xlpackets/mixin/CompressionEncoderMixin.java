@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.zip.Deflater;
 
@@ -26,8 +26,7 @@ public class CompressionEncoderMixin {
     private byte[] encodeBuf;
 
     @Inject(method = "encode*", at = @At("HEAD"))
-    protected void encode(ChannelHandlerContext channelHandlerContext, ByteBuf byteBuf, ByteBuf byteBuf2, CallbackInfoReturnable<ByteBuf> cir) {
-        cir.cancel();
+    protected void encode(ChannelHandlerContext channelHandlerContext, ByteBuf byteBuf, ByteBuf byteBuf2, CallbackInfo info) {
         int i = byteBuf.readableBytes();
         FriendlyByteBuf friendlyByteBuf = new FriendlyByteBuf(byteBuf2);
         if (i < this.threshold) {

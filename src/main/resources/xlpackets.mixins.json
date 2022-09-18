@@ -6,8 +6,8 @@
   "mixins": [
     "ClientboundCustomPayloadPacketMixin",
     "CompressionDecoderMixin",
-    "FriendlyByteBufMixin",
-    "CompressionEncoderMixin"
+    "CompressionEncoderMixin",
+    "FriendlyByteBufMixin"
   ],
   "injectors": {
     "defaultRequire": 0
