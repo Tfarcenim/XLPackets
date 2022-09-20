@@ -5,6 +5,6 @@ license = "Unlicense" #mandatory
 [[mods]]
 modId = "xlpackets" #mandatory
 version = "${version}" #mandatory
-displayName = "XL Packets" #mandatory
+displayName = "XL Packets Renewed" #mandatory
 authors = "Tfarecnim" #optional
 description = "Mod to help clients connect to servers with large datapacks" #mandatory
